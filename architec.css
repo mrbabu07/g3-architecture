@@ -130,6 +130,48 @@ main > section{
   color: #ff900e;
 }
 
+.features{
+  gap: 50px;
+}
+.feature-card{
+  padding: 20px;
+  box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+  margin: 20px;
+  border-radius: 8px;
+}
+
+#experience-year{
+  padding: 45px, 42px;
+   margin-left: -80px;
+   margin-top: -75px;
+  
+}
+#experience-badge{
+  font-size: 4rem;
+  font-weight: 700;
+ 
+}
+#choto-badge{
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.feature-card, .feature-title{
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  
+
+}
+
+/* feature section related style */
+
+#feature-section-title{
+border-left: 5px solid #ff900e;
+padding: 21px;
+}
+
 /* some fact related style */
 .fact-card{
   border: 1px solid #ff900e;
@@ -179,6 +221,20 @@ main > section{
   filter: grayscale(100%);
 }
 
+.features-architec img{
+  width: 100%;
+}
+
+.footer{
+  background-color: #ff900e;
+  margin-top: 30px;
+  padding: 20px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
 /* responsive media query  */
 
 
@@ -186,6 +242,7 @@ main > section{
   .navbar,
    .nav-link,
    .teams ,
+   .features
    
    {
     flex-direction: column;
@@ -204,13 +261,19 @@ main > section{
   .our-features{
     margin-left: 20px;
   }
+  #experience-year{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+
+  }
 }
 
 
 /* medium size device */
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
-  .teams{
+  .teams .features{
     flex-direction: column;
   }
   .our-features{
